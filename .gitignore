@@ -1,0 +1,36 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# File sementara
+*.log
+*.tmp
+*.bak
+
+# Python testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# File konfigurasi rahasia
+.env
+.env.*
+
+# File cadangan
+*~
