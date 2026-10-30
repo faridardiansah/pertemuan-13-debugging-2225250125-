@@ -1,34 +1,21 @@
-# Praktik 4: Investigasi dan Perbaikan Bug
+# Pertemuan 13 - Debugging dan Testing
 
-def hitung_rata_rata(nilai):
-    return sum(nilai) / len(nilai)
+**Nama:** Farid Ardiansah  
+**NIM:** 2225250125  
+**Kelas:** 3E
 
-def status(nilai):
-    if nilai >= 60:
-        return "Lulus"
-    return "Tidak lulus"
+## Kasus
 
-def nilai_tertinggi(nilai):
-    tertinggi = nilai[0]
-    for x in nilai:
-        if x > tertinggi:
-            tertinggi = x
-    return tertinggi
+Pada praktikum ini dilakukan pengujian dan perbaikan bug pada program Python yang digunakan untuk mengolah data nilai mahasiswa.
 
+Program memiliki tiga fungsi utama, yaitu:
 
-# Data mahasiswa
-nilai = [80, 60, 90, 70]
+1. `hitung_rata_rata()` untuk menghitung rata-rata nilai mahasiswa.
+2. `status()` untuk menentukan kelulusan berdasarkan batas nilai minimal 60.
+3. `nilai_tertinggi()` untuk mencari nilai tertinggi dari kumpulan data.
 
-print("Rata-rata:", hitung_rata_rata(nilai))
-print("Status 60:", status(60))
-print("Tertinggi:", nilai_tertinggi(nilai))
+Program awal memiliki beberapa kesalahan logika yang menyebabkan hasil perhitungan tidak sesuai. Oleh karena itu, dilakukan pengujian menggunakan test case, identifikasi bug, perbaikan kode, dan pengujian ulang.
 
+## Test Case
 
-# Test Case
-print("\n=== HASIL TEST CASE ===")
-
-print("T1:", "PASS" if hitung_rata_rata([80, 60, 90, 70]) == 75.0 else "FAIL")
-print("T2:", "PASS" if hitung_rata_rata([100, 80]) == 90.0 else "FAIL")
-print("T3:", "PASS" if status(60) == "Lulus" else "FAIL")
-print("T4:", "PASS" if status(59) == "Tidak lulus" else "FAIL")
-print("T5:", "PASS" if nilai_tertinggi([80, 60, 90, 70]) == 90 else "FAIL")
+Berikut hasil yang
